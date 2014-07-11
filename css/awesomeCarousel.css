@@ -31,18 +31,24 @@
 }
 
 /* content positioning classes */
-p.top-right {
-  top: 0;
+p.full-width {
+  left: 0;
   right: 0;
 }
 
-p.bottom-left {
+p.top {
+  top: 0;
+}
+
+p.bottom {
   bottom: 0;
 }
 
-p.bottom-right {
-  position: absolute;
-  bottom: 0;
+p.left {
+  left: 0;
+}
+
+p.right {
   right: 0;
 }
 
@@ -71,3 +77,17 @@ ul.dot-nav li:hover, ul.dot-nav li.active {
   -webkit-transition: .5s;
   transition: .5s;
 }
+
+/* mobile */
+@media all and (max-width: 600px) {
+  p.top, p.bottom, p.left, p.right {
+    left: 0;
+    right: 0;
+  } 
+}
+
+
+
+
+
+
