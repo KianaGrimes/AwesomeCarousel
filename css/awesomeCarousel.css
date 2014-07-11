@@ -1,10 +1,49 @@
+/* carousel container */
 #carousel {
   font-family: 'Raleway', sans-serif;
+  background: url('https://s3.amazonaws.com/awesomeCarousel/kitty.jpg') no-repeat center; /* setting fallback image */
+  background-size: cover;
 }
 
+/* carousel slides */
 #carousel ul {
   padding: 0px;
   list-style-type: none;
+  height: 400px; /* set height for carousel */
+  position: relative;
+}
+
+#carousel ul li {
+  display: none;
+}
+
+#carousel ul li.active {
+  display: block;
+}
+
+#carousel ul li p {
+  font-size: 2em;
+  background: #df95cb;
+  opacity: .85;
+  color: cornsilk;
+  padding: 10px;
+  position: absolute;
+}
+
+/* content positioning classes */
+p.top-right {
+  top: 0;
+  right: 0;
+}
+
+p.bottom-left {
+  bottom: 0;
+}
+
+p.bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* dot navigation styles */
