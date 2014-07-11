@@ -1,7 +1,7 @@
 /* carousel container */
 #carousel {
   font-family: 'Raleway', sans-serif;
-  background: url('https://s3.amazonaws.com/awesomeCarousel/kitty.jpg') no-repeat center; /* setting fallback image */
+  background: url('https://s3.amazonaws.com/awesomeCarousel/img/kitty.jpg') no-repeat center; /* setting fallback image */
   background-size: cover;
 }
 

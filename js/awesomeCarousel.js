@@ -7,6 +7,14 @@ $(document).ready(function() {
   var interval = null;
   var intervalSpeed = 3000;
 
+  // preloading images
+  var backgrounds = [];
+  slide.each(function() {
+    var img = new Image();
+    img.src = $(this).data('background');
+    backgrounds.push(img);
+  });
+
   // adding initial active slide
   slide.first().addClass('active');
   var background = $('#carousel ul li.active').data('background');
@@ -65,4 +73,5 @@ $(document).ready(function() {
     clearInterval(interval);
     interval = setInterval(onInterval, intervalSpeed);
   }
+
 });
