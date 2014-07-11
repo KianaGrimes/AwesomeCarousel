@@ -1,0 +1,17 @@
+html, body {
+  font-family: 'Raleway', sans-serif;
+}
+
+strong {
+  text-transform: uppercase;
+}
+
+.container {
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+.content {
+  padding: 50px;
+  line-height: 30px;
+}
